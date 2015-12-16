@@ -1,7 +1,7 @@
 TCPATH=/Users/daniel/projects/embedded/toolchain/gcc-arm-none-eabi-4_9-2015q3/bin
 
-CFLAGS=-O0 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7-a -mtune=cortex-a7
-LDFLAGS=-nostartfiles -mfloat-abi=hard
+CFLAGS=-O0 --std-c99 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7-a -mtune=cortex-a7
+LDFLAGS=--no-std-crt0 --nostdlib -mfloat-abi=hard
 
 CC=$(TCPATH)/arm-none-eabi-gcc
 OBJC=$(TCPATH)/arm-none-eabi-objcopy
