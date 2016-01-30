@@ -1,6 +1,6 @@
-TCPATH=/Users/daniel/projects/embedded/toolchain/gcc-arm-none-eabi-4_9-2015q3/bin
+TCPATH=./toolchain/gcc-arm-none-eabi-5_2-2015q4/bin
 
-CFLAGS=-O0 --std-c99 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7-a -mtune=cortex-a7
+CFLAGS=-O0 --std=c99 -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7-a -mtune=cortex-a7
 LDFLAGS=--no-std-crt0 --nostdlib -mfloat-abi=hard
 
 CC=$(TCPATH)/arm-none-eabi-gcc
