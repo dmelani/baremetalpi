@@ -59,17 +59,17 @@
 void
 led0_enable(void) {
 	volatile unsigned int *fs4 = (unsigned int *) GPFSEL4;
-	fs4 |= 1<<21;
+	*fs4 |= 1<<21;
 }
 
 void
 led0_on(void) {
 	volatile unsigned int *clear = (unsigned int *) GPCLR1;
-	clear |= 1<<15;
+	*clear |= 1<<15;
 }
 
 void
 led0_off(void) {
 	volatile unsigned int *set = (unsigned int *) GPSET1;
-	set |= 1<<15;
+	*set |= 1<<15;
 }

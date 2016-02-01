@@ -1,2 +1,5 @@
 *.o
 toolchain/
+kernel.elf
+kernel.img
+
